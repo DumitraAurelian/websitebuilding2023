@@ -5,10 +5,9 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   pause: 'hover', //false
   keyboard:true,
   touch: true,
-  ride: false, 
+
   //ride:false opreste animatia si utilizatorul da singur click
 })
-
 
 var id;
 $("#modalForm").on('show.bs.modal', function(event) {
