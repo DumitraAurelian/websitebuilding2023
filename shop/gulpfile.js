@@ -86,7 +86,7 @@ gulp.task('images', () => {
       )
 //     reduce image quality based on the size
       .pipe(
-        imagemin(
+        imagemin( 
           [
             imageminMozjpeg({
               quality: size.quality,

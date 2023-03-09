@@ -5,7 +5,7 @@ var carousel = new bootstrap.Carousel(myCarousel, {
   pause: 'hover', //false
   keyboard:true,
   touch: true,
-
+   
   //ride:false opreste animatia si utilizatorul da singur click
 })
 const scrollBtn = document.querySelector(".gototop");
@@ -25,6 +25,7 @@ scrollBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+ 
 
 
 var id;

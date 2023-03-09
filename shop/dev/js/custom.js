@@ -15,3 +15,4 @@ scrollBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+ 

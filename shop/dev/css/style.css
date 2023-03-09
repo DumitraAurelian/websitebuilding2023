@@ -1,5 +1,5 @@
 #sec-contact {
-  background-color: black; }
+  background-color: #152733; }
 
 .form-holder {
   display: flex;
@@ -137,11 +137,11 @@
 .btn-style {
   background-color: #551b54;
   border: 2px solid #fff;
-  border-radius: 25%;
+  border-radius: 50%;
   height: 50px;
   width: 50px;
   color: #fff;
-  cursor: crosshair;
+  cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
   transition: all 0.5s ease-in-out;
   font-size: 40px;
