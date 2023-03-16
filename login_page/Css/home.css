@@ -36,7 +36,7 @@ body {
   text-transform: capitalize;
   font-size: 16px;
   color: #9e3535;
-  background: none;
+  background: yellow;
   text-decoration: underline;
   cursor: pointer;
   outline: none;

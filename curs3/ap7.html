@@ -118,6 +118,7 @@
                         p.innerHTML += `
    <ul>
    <li>ID: ${item.id}</li>
+  
    <li>Name: ${item.name}</li>
    <li>Username: ${item.username}</li>
    <li>Email: ${item.email}</li>
@@ -130,6 +131,7 @@
    <li>Lng: ${item.address.geo.lng}</li>
    </ul>
    `
+   console.log (item.id);
                     })
                     document.getElementById('loader').classList.add('hidden');
 
