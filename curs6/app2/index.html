@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./leaflet/leaflet.css">
+    <script src="./leaflet/leaflet.js"></script>
+    <style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		.leaflet-container {
+			height: 400px;
+			width: 600px;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	</style>
+</head>
+<body>
+    <div id='map'></div>
+
+    <script>
+       const map = L.map('map').setView([44.44551464729153, 26.097144658428704], 13);
+    //    ce e intre paranteze patrate la setView sunt coordonatele hartii, coordonate pe care le putem lua prin click dreapta in Google Maps, si le luam de acolo. 
+    // 13 este profunzimea zoom-ului
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+const LeafIcon = L.Icon.extend({
+    options: {
+        shadowUrl: 'leaf-shadow.png',
+        iconSize:     [38, 95],
+        shadowSize:   [50, 64],
+        iconAnchor:   [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor:  [-3, -76]
+    }
+});
+
+const greenIcon = new LeafIcon({iconUrl: './leaflet/images/leaf-green.png'});
+// aici se scrie de mana destinatia pozei si denumirea ei
+const redIcon = new LeafIcon({iconUrl: './leaflet/images/leaf-red.png'});
+const orangeIcon = new LeafIcon({iconUrl: './leaflet/images/leaf-orange.png'});
+
+const mGreen = L.marker([44.45157161865599, 26.084919821613113], {icon: greenIcon}).bindPopup('I am a green leaf.').addTo(map);
+// aici se trec coordonatele marker-ului
+const mRed = L.marker([44.44475674794785, 26.09837508199035], {icon: redIcon}).bindPopup('I am a red leaf.').addTo(map);
+const mOrange = L.marker([44.43905366501906, 26.112276272783017], {icon: orangeIcon}).bindPopup('I am an orange leaf.').addTo(map);
+    </script>
+</body>
+</html>
