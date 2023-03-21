@@ -13,28 +13,7 @@
     <div class="p-5 bg-warning">
         <h1>Demo Header</h1>
     </div>
-    <nav id="navbar_top" class="navbar  navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a href="#" class="navbar-brand">
-                <img src="./assets/img/logo (1).svg" height="28" alt="Logo">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="#sec-home" class="nav-item nav-link active">Acasa</a>
-                    <a href="#sec-about" class="nav-item nav-link">Despre</a>
-                    <a href="#sec-products" class="nav-item nav-link">Produse</a>
-                    <a href="produse.html" class="nav-item nav-link">Produse noi</a>
-                    <a href="#sec-contact" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="navbar-nav ms-auto">
-                    <a href="#" class="nav-item nav-link">Login</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <section w3-include-html="navbar.html"></section>
     <!-- STOP  Section Navbar -->
     <!-- STARt Section Carousel -->
     <div id="sec-home" class="container-lg my-3">
@@ -320,62 +299,7 @@
     </section>
   
     <!-- STOP Section  Validation -->
-
-<!-- START Footer Section -->
-  
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
-            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
-            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
-            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
-            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/about/">About Us</a></li>
-            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
-            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
-            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
-            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
-       <a href="#">Scanfcode</a>.
-          </p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-          </ul>
-        </div>
-      </div>
-    </div>
-</footer>
-<!-- STOP Footer Section -->
+    <section w3-include-html="footer.html"></section>
     <div className="scroll-to-top">
         <span class="btn gototop btn-position btn-style">^</i>
     </div>
@@ -383,6 +307,11 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- Bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="./assets/js/main-min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./dev/js/include.js"></script>
+    <script src="./assets/js/produse.js"></script>
+
+    <!-- <script src="./assets/js/cart.js"></script> -->
+    <!-- <script src="./dev/js/include.js"></script> -->
 </body>
 </html>

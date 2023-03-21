@@ -56,6 +56,7 @@ function onLoad() {
 
     }).finally(() => {
         console.log("Cererea s-a incheiat: cu succes sau fara succes.");
+        $.getScript("./assets/js/cart.js");
 
     });
 }
@@ -79,7 +80,9 @@ async function listProducts(products) {
                 <h4 class="card-title">${product.name} ${product.category}</h4>
                 <p class="text-muted">Starting from ${product.price}</p>
                 <a target= '_blank' class="btn btn-outline-primary btn-sm" href="${product.product_link}" data-abc="true">View Products</a>
-                <button data-id="${product.id}" type="button" class="btn btn-success float-end">Add to cart</button>
+               
+                <a href="#" data-name="Lemon" data-price="5" class="add-to-cart btn btn-primary text-white">Add to
+                cart</a>
                 
             </div>
         </div>
